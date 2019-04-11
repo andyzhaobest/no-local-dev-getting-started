@@ -10,7 +10,7 @@ get "/" do
 end
 
 
-class Contact < ActiveRecord::Base
+class Contact11 < ActiveRecord::Base
   self.table_name = 'salesforce.contact'
 end
 
@@ -19,12 +19,12 @@ end
 #  erb :index
 #end
 
-class VoucherTemplate < ActiveRecord::Base
+class Contact < ActiveRecord::Base
   self.table_name = 'salesforce.VoucherTemplate__c'
 end
 
 get "/contacts" do
-  @contacts = VoucherTemplate.all
+  @contacts = Contact.all
   erb :index
 end
 
