@@ -20,7 +20,7 @@ end
 #end
 
 class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.VoucherTemplate__c'
+  self.table_name = 'salesforce.VoucherTemplate'
 end
 
 get "/contacts" do
