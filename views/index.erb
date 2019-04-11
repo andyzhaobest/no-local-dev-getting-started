@@ -9,9 +9,9 @@
 
     <% @contacts.each do |contact| %>
       <tr>
-        <td><%= contact.firstname %></td>
-        <td><%= contact.lastname %></td>
-        <td><%= contact.email %></td>
+        <td><%= contact.Name %></td>
+        <td><%= contact.DiscountType__c %></td>
+        <td><%= contact.DiscountAmount__c %></td>
       </tr>
     <% end %>
   </table>
