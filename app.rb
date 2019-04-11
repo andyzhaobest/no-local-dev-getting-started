@@ -23,7 +23,7 @@ class VoucherTemplate < ActiveRecord::Base
   self.table_name = 'salesforce.VoucherTemplate__c'
 end
 
-get "/VoucherTemplate" do
+get "/contacts" do
   @contacts = VoucherTemplate.all
   erb :index
 end
