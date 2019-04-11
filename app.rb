@@ -19,6 +19,15 @@ end
 #  erb :index
 #end
 
+class VoucherTemplate__c < ActiveRecord::Base
+  self.table_name = 'salesforce.VoucherTemplate__c'
+end
+
+get "/VoucherTemplate__c" do
+  @contacts = VoucherTemplate__c.all
+  erb :index
+end
+
 get "/create" do
   dashboard_url = 'https://dashboard.heroku.com/'
   match = /(.*?)\.herokuapp\.com/.match(request.host)
