@@ -19,12 +19,12 @@ end
 #  erb :index
 #end
 
-class Contact < ActiveRecord::Base
+class Vouchert < ActiveRecord::Base
   self.table_name = 'salesforce.vouchertemplate__c'
 end
 
-get "/contacts" do
-  @contacts = Contact.all
+get "/vts" do
+  @vts = Vouchert.all
   erb :index
 end
 
