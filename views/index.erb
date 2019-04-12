@@ -7,7 +7,7 @@
 
     <% @vts.each do |vt| %>
       <tr>
-        <td><%= vt:DiscountType__c %></td>
+        <td><%= vt.text_field:Name %></td>
       </tr>
     <% end %>
   </table>
